@@ -1,0 +1,120 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="cga.esprit.cgaandroid.CreateClaimFragment">
+
+    <TextView
+        android:id="@+id/id_C"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="16dp"
+        android:text="ID : "/>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/date_accident"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Validation d'accident"
+            android:inputType="date"
+            android:visibility="visible" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/heur_accident"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Heur Accident"
+            android:inputType="datetime"
+            android:visibility="visible" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Location"
+            android:inputType="text"
+            android:visibility="visible" />
+    </android.support.design.widget.TextInputLayout>
+
+    <Switch
+        android:id="@+id/injured"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Injured" />
+
+    <Switch
+        android:id="@+id/dmg_vh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Vehicule Damage" />
+
+    <Switch
+        android:id="@+id/other_dmg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Autre Dommage" />
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/nameAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Informations"
+            android:inputType="text"
+            android:visibility="visible" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/sketch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Sketch de l'accident"
+            android:inputType="text"
+            android:visibility="visible" />
+    </android.support.design.widget.TextInputLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal">
+        <Button
+            android:id="@+id/btn_update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|bottom"
+
+            android:text="Modifié"/>
+        <Button
+            android:id="@+id/btn_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|bottom"
+
+            android:text="Supprimé "/>
+    </LinearLayout>
+
+
+</LinearLayout>

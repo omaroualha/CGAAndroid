@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="4dp"
+    app:cardElevation="4dp"
+    app:cardUseCompatPadding="true"
+    app:contentPadding="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:selectableItemBackground">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/id_claim"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="4dp"
+                android:text="TextView"
+                android:textAppearance="@android:style/TextAppearance.Medium" />
+
+            <TextView
+                android:id="@+id/date_claim"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginTop="8dp"
+                android:text="TextView" />
+
+            <TextView
+                android:id="@+id/heur_claim"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="8dp"
+                android:maxLength="10"
+                android:text="TextView"
+                android:textSize="10sp"
+                android:layout_marginRight="8dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="right|center">
+
+            <com.nightonke.boommenu.BoomMenuButton
+                android:id="@+id/bmbDetails"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+
+                app:bmb_buttonEnum="ham"
+                app:bmb_buttonPlaceEnum="buttonPlace_ham_3"
+                app:bmb_inList="true"
+                app:bmb_piecePlaceEnum="piecePlace_ham_3"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                android:visibility="gone"/>
+
+            <com.nightonke.boommenu.BoomMenuButton
+                android:id="@+id/bmbShare"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:visibility="gone"
+                app:bmb_buttonEnum="simpleCircle"
+                app:bmb_piecePlaceEnum="piecePlace_share"
+                app:bmb_buttonPlaceEnum="buttonPlace_sc_3_1"
+                app:bmb_shareLine1Color="@color/navy_blue"
+                app:bmb_shareLine2Color="@color/primaryTextColor"
+                app:bmb_inList="true"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toRightOf="parent" />
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>
